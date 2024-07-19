@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipping Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Tipping Calculator</h1>
+            <div class="input-group">
+                <!-- <label for="item1">Item 1:</label> -->
+                <input type="number" id="item1" class="item-price" placeholder="0.00">
+                <select id="split1" class="item-split">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <!-- <label for="item2">Item 2:</label> -->
+                <input type="number" id="item2" class="item-price" placeholder="0.00">
+                <select id="split2" class="item-split">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <!-- <label for="item3">Item 3:</label> -->
+                <input type="number" id="item3" class="item-price" placeholder="0.00">
+                <select id="split3" class="item-split">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <!-- <label for="item4">Item 4:</label> -->
+                <input type="number" id="item4" class="item-price" placeholder="0.00">
+                <select id="split4" class="item-split">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <!-- <label for="item5">Item 5:</label> -->
+                <input type="number" id="item5" class="item-price" placeholder="0.00">
+                <select id="split5" class="item-split">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="tax">TAX</label>
+                <input type="number" id="tax" value="8.875">
+            </div>
+            <div class="input-group">
+                <label for="tip">TIP</label>
+                <input type="number" id="tip" value="15">
+            </div>
+            <div class="output-group">
+                <p id="total"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
