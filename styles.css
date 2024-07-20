@@ -1,22 +1,22 @@
 @font-face {
     font-family: "Satoshi-Regular";
-    src: url('../Fonts/Satoshi-Regular.otf');
+    src: url('./Fonts/Satoshi-Regular.otf');
 }
 @font-face {
     font-family: "Satoshi-Light";
-    src: url('../Fonts/Satoshi-Light.otf');
+    src: url('./Fonts/Satoshi-Light.otf');
 }
 @font-face {
     font-family: "Satoshi-Medium";
-    src: url('../Fonts/Satoshi-Medium.otf');
+    src: url('./Fonts/Satoshi-Medium.otf');
 }
 @font-face {
     font-family: "Satoshi-Bold";
-    src: url('../Fonts/Satoshi-Bold.otf');
+    src: url('./Fonts/Satoshi-Bold.otf');
 }
 @font-face {
     font-family: "PPMori-SemiBold";
-    src: url('../Fonts/PPMori-SemiBold.otf');
+    src: url('./Fonts/PPMori-SemiBold.otf');
 }
 
 html, body {
