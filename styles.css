@@ -1,78 +1,107 @@
 @font-face {
-  font-family: "Satoshi-Regular";
-  src: url('../Fonts/Satoshi-Regular.otf');
-  font-family: "Satoshi-Light";
-  src: url('../Fonts/Satoshi-Light.otf');
-  font-family: "Satoshi-Medium";
-  src: url('../Fonts/Satoshi-Medium.otf');
-  font-family: "Satoshi-Bold";
-  src: url('../Fonts/Satoshi-Bold.otf');
+    font-family: "Satoshi-Regular";
+    src: url('../Fonts/Satoshi-Regular.otf');
+}
+@font-face {
+    font-family: "Satoshi-Light";
+    src: url('../Fonts/Satoshi-Light.otf');
+}
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url('../Fonts/Satoshi-Medium.otf');
+}
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url('../Fonts/Satoshi-Bold.otf');
+}
+@font-face {
+    font-family: "PPMori-SemiBold";
+    src: url('../Fonts/PPMori-SemiBold.otf');
 }
 
-
-body {
-    font-family: "Satoshi-Regular", sans-serif;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Satoshi-Medium", sans-serif;
     font-size: 12px;
+    background-color: #F3EFE9;
+    color: #661EFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f2f2f2;
 }
 
 .container {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 100%;
     max-width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-    font-family: "Satoshi-Light", sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-family: "PPMori-SemiBold", sans-serif;
+    font-size: 6rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 6rem;
+    color: #661EFF;
+    width: 100%;
+    text-align: center;
 }
 
 .input-group, .output-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 label {
+    font-family: "Satoshi-Regular", sans-serif;
+    font-size: 1.2rem;
     flex: 1;
-    margin-right: 10px;
-    text-align: right;
+    margin-right: 1rem;
+    text-align: left;
+    /* background-color: #ac7f24; */
+
 }
 
 input, select {
+    font-family: "Satoshi-Regular", sans-serif;
     flex: 2;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 2rem;
+    border: 2px solid #661EFF;
+    background-color: #F8F5EF;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 16px;  /* Ensures no zoom on input */
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+    
 }
 
 input[type="number"] {
     -moz-appearance: textfield;
+    color: #661EFF;
 }
 
 select {
     margin-left: 10px;
-    height: 2rem;
+    height: 40px;
 }
 
 button {
@@ -95,4 +124,17 @@ p {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+.output-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#total {
+    /* background-color: #28a745; */
+    font-family: "PPMori-SemiBold", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 6rem;
 }

@@ -17,7 +17,7 @@ function calculateTotal() {
     const taxAmount = subtotal * (taxRate / 100);
     const total = subtotal + tipAmount + taxAmount;
 
-    document.getElementById('total').innerText = `Total: $${total.toFixed(2)}`;
+    document.getElementById('total').innerText = `$${total.toFixed(2)}`;
 }
 
 document.querySelectorAll('.item-price, .item-split, #tax, #tip').forEach(element => {
