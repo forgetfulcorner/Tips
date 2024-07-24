@@ -24,123 +24,121 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Satoshi-Medium", sans-serif;
-    font-size: 12px;
-    background-color: #F3EFE9;
-    color: #661EFF;
+    font-family: "Satoshi-Light", sans-serif;
+    background-color: #FF543C;
+    color: #F3EFE9;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container1 {
-    /* background-color: #8fd33b; */
-}
-.container2 {
-    /* background-color: #218838; */
-}
-.container3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #67d67f; */
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .container {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FF543C;
+    padding: 3rem 1rem 0rem 1rem;
     width: 100%;
-    max-width: 400px;
     height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-around; */
+    font-size: 4rem;
+}
+
+.container1,
+.container2,
+.container3 {
+    background-color: #FF543C;
+    border-bottom: solid #F3EFE9;
+    height: auto;
+    padding: 1rem 1rem 1rem 1rem; /* Consistent padding for all containers */
+    justify-content: space-between;
+}
+
+.container4 {
+    background-color: #FF543C;
+    height: auto;
+    padding: 1rem 0; /* Consistent padding for all containers */
+    text-align: right;
 }
 
 h1 {
     font-family: "PPMori-SemiBold", sans-serif;
-    font-size: 4rem;
-    text-align: center;
-    /* margin-bottom: 6rem; */
-    color: #661EFF;
+    font-size: 2rem;
+    text-align: right;
 }
 
-.input-group, .output-group {
-    margin-bottom: 1.5rem;
+.input-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-label {
-    font-family: "Satoshi-Regular", sans-serif;
-    font-size: 1.2rem;
-    flex: 1;
-    margin-right: 1rem;
-    text-align: left;
+    height: 4rem;
 }
 
 input, select {
-    font-family: "Satoshi-Regular", sans-serif;
+    font-family: "Satoshi-Light", sans-serif;
     flex: 2;
-    padding: 8px;
     box-sizing: border-box;
-    border: 2px solid #661EFF;
-    background-color: #F8F5EF;
-    border-radius: 8px;
+    border: 0;
     height: 40px;
-    font-size: 16px;
+    font-size: 3rem;
+    outline: none; /* Remove outline on focus */
+    -webkit-appearance: none; /* Remove input arrows */
+    appearance: none; /* Remove input arrows */
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.item-split {
+    font-family: "Satoshi-Bold", sans-serif;
+    background-color: #F3EFE9;
+    max-width: 4rem;
+    height: 3rem;
+    font-size: 2rem;
+    color: #FF543C;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item-price {
+    background-color: #FF543C;
+    text-align: right;
+    max-width: 50%;
+}
+
+#tax,
+#tip {
+    background-color: #FF543C;
 }
 
 input[type="number"] {
     -moz-appearance: textfield;
-    color: #661EFF;
-}
-
-select {
-    margin-left: 10px;
-    height: 40px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-p {
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 10px;
+    text-align: right;
+    width: 20px;
+    color: #F3EFE9;
 }
 
 .output-group {
-    /* display: flex;
-    flex-direction: column; */
 }
 
 #total {
     font-family: "PPMori-SemiBold", sans-serif;
-    font-size: 4rem;
-    /* background-color: #218838; */
-    /* margin-top: rem; */
+}
+
+/* Ensure the view adjusts on screen resize */
+@media (max-height: 600px) {
+    .container {
+        justify-content: space-between; /* Adjust to fill the screen */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font for small screens */
+    }
+
+    input, select {
+        font-size: 2.5rem; /* Adjust input font size */
+    }
+
+    .item-split {
+        height: 2.5rem; /* Adjust split box size */
+        font-size: 1.5rem;
+    }
 }
