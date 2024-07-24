@@ -41,17 +41,22 @@ html, body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     font-size: 4rem;
 }
 
-.container1,
+.container1 {
+    background-color: #FF543C;
+    border-bottom: solid #F3EFE9;
+    height: auto;
+    text-align: right;
+}
+
 .container2,
 .container3 {
     background-color: #FF543C;
     border-bottom: solid #F3EFE9;
     height: auto;
-    padding: 1rem 1rem 1rem 1rem; /* Consistent padding for all containers */
+    padding: 1rem 0rem 1rem 0rem; /* Consistent padding for all containers */
     justify-content: space-between;
 }
 
@@ -85,6 +90,13 @@ input, select {
     outline: none; /* Remove outline on focus */
     -webkit-appearance: none; /* Remove input arrows */
     appearance: none; /* Remove input arrows */
+    color: #F3EFE9;
+    background-color: #FF543C;
+}
+
+input::placeholder {
+    color: #F3EFE9; /* Match placeholder text color to input text color */
+    opacity: 1; /* Ensure the placeholder is fully visible */
 }
 
 .item-split {
@@ -101,7 +113,7 @@ input, select {
 .item-price {
     background-color: #FF543C;
     text-align: right;
-    max-width: 50%;
+    max-width: 75%;
 }
 
 #tax,
