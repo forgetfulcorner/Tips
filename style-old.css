@@ -1,10 +1,3 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: "Satoshi-Regular";
     src: url('./Fonts/Satoshi-Regular.otf');
@@ -38,7 +31,6 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Prevent scrolling */
-    line-height: 1.2; /* Consistent line height */
 }
 
 .container {
@@ -49,8 +41,8 @@ html, body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     font-size: 4rem;
-    justify-content: space-around; /* Fill the screen space */
 }
 
 .container1 {
@@ -65,22 +57,23 @@ html, body {
     background-color: #FF543C;
     border-bottom: solid #F3EFE9;
     height: auto;
-    padding: 1rem 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
 }
 
 .container4 {
     background-color: #FF543C;
     height: 4rem;
-    padding: 1rem 0;
+    padding: 1rem 0; /* Consistent padding for all containers */
     text-align: right;
+    /* display: flex; */
 }
 
 h1 {
     font-family: "PPMori-SemiBold", sans-serif;
     font-size: 2rem;
     text-align: right;
-    line-height: 1.2; /* Consistent line height for h1 */
 }
 
 .input-group {
@@ -88,7 +81,6 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: 3.2rem;
-    margin-bottom: 0; /* Remove extra spacing */
 }
 
 .output-group {
@@ -106,17 +98,16 @@ input, select {
     border: 0;
     height: 40px;
     font-size: 3rem;
-    outline: none;
-    -webkit-appearance: none;
-    appearance: none;
+    outline: none; /* Remove outline on focus */
+    -webkit-appearance: none; /* Remove input arrows */
+    appearance: none; /* Remove input arrows */
     color: #F3EFE9;
     background-color: #FF543C;
-    -webkit-text-size-adjust: 100%; /* Prevent text size changes */
 }
 
 input::placeholder {
-    color: #F3EFE9;
-    opacity: 1;
+    color: #F3EFE9; /* Match placeholder text color to input text color */
+    opacity: 1; /* Ensure the placeholder is fully visible */
 }
 
 .item-split {
@@ -124,7 +115,6 @@ input::placeholder {
     background-color: #F3EFE9;
     max-width: 3rem;
     height: 2.5rem;
-    padding-left: 0.5rem;
     font-size: 1.5rem;
     color: #FF543C;
     border-radius: 8px;
@@ -149,27 +139,30 @@ input[type="number"] {
     color: #F3EFE9;
 }
 
+
 #total {
     font-family: "PPMori-SemiBold", sans-serif;
     height: auto;
-    margin: 0;
+    margin: 0px;
+
 }
 
+/* Ensure the view adjusts on screen resize */
 @media (max-height: 600px) {
     .container {
-        justify-content: space-between;
+        justify-content: space-between; /* Adjust to fill the screen */
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller font for small screens */
     }
 
     input, select {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Adjust input font size */
     }
 
     .item-split {
-        height: 2.5rem;
+        height: 2.5rem; /* Adjust split box size */
         font-size: 1.5rem;
     }
 }
