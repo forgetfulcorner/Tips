@@ -1,9 +1,4 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 @font-face {
     font-family: "Satoshi-Regular";
@@ -173,3 +168,10 @@ input[type="number"] {
         font-size: 1.5rem;
     }
 }
+
+CSS Reset
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
